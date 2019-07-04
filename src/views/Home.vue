@@ -1,18 +1,47 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <h1>Subscribe</h1>
+    <p>Esterling Accime's mailing list</p>
+    <el-input placeholder="Email..." v-model="input" clearable></el-input>
+    <el-button>Subscribe</el-button>
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue';
 
 export default {
   name: 'home',
-  components: {
-    HelloWorld,
+  data() {
+    return {
+      input: '',
+    };
   },
+  components: {},
 };
 </script>
+
+
+<style>
+  .home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 70vh;
+    width: 40%;
+    margin: 0 auto;
+  }
+
+  .home p {
+    margin-top: 10px;
+  }
+
+  .home input {
+    margin-top: 20px;
+  }
+
+  .home button {
+    margin-top: 20px;
+  }
+</style>
