@@ -1,16 +1,12 @@
 <template>
   <div id="app">
-    <Home />
+    <router-view/>
   </div>
 </template>
 
 <script>
-import Home from './views/Home.vue';
 
 export default {
-  components: {
-    Home,
-  },
 };
 </script>
 
@@ -35,7 +31,6 @@ export default {
     font-size: 30px;
     font-weight: 300;
     font-family: sans-serif;
-    line-height: 32px;
   }
   p {
     font-family: sans-serif;
