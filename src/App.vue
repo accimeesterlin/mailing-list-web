@@ -34,5 +34,6 @@ export default {
   }
   p {
     font-family: sans-serif;
+    line-height: 25px;
   }
 </style>

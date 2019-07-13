@@ -21,10 +21,12 @@ export default {
     align-items: center;
     flex-direction: column;
     height: 70vh;
+    padding: 0px 20px;
   }
 
   .confirmation p {
     margin-top: 10px;
+    text-align: center;
   }
 
 </style>
